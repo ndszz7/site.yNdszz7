@@ -1,114 +1,169 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site do yNdszz7</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            padding: 20px;
-            background-image: url('https://th.bing.com/th/id/OIP.0qEAh4E1f4ICM2FAIyXC3wHaEK?rs=1&pid=ImgDetMain');
-            background-size: 120%;
-            background-position: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background: none;
-        }
-        h2 {
-            color: white;
-            font-size: 40px;
-            margin-bottom: 30px;
-        }
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .social-link {
-            text-align: center;
-            background-color: red;
-            border-radius: 10px;
-            padding: 20px;
-            width: 150px;
-            height: 150px;
-        }
-        .social-link a img {
-            width: 70px;
-            height: 70px;
-        }
-        .social-name {
-            font-size: 18px;
-            font-weight: bold;
-            margin-top: 10px;
-            color: white;
-        }
-        .link-text {
-            font-size: 14px;
-            color: #0066cc;
-        }
-        .link-text a {
-            text-decoration: none;
-            color: #0066cc;
-        }
-        .link-text a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site do yNdszz7</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #001f3f, #003366);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: white;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1000px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      animation: fadeIn 1s ease forwards;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      animation: slideDown 1s ease;
+    }
+
+    .social-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+    }
+
+    .social-link {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .social-link:hover {
+      transform: translateY(-8px);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .social-link img {
+      width: 60px;
+      height: 60px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .link-text a {
+      font-size: 0.9rem;
+      color: #00ccff;
+      text-decoration: none;
+    }
+
+    .link-text a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.96);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Responsivo */
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 2rem;
+      }
+
+      .social-link img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .social-name {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Site do yNdszz7</h2>
-        
-        <div class="social-links">
-            <div class="social-link">
-                <a href="https://wa.me/92985340003" target="_blank">
-                    <img src="https://th.bing.com/th/id/OIP.aB8Zep1Uajjii9WnIbJw7QHaHa?rs=1&pid=ImgDetMain" alt="WhatsApp">
-                </a>
-                <div class="social-name">WhatsApp</div>
-                <div class="link-text">
-                    <a href="https://wa.me/92985340003" target="_blank">Clique para conversar!</a>
-                </div>
-            </div>
-
-            <div class="social-link">
-                <a href="https://www.tiktok.com/@ndszz7.am_capcut?is_from_webapp=1&sender_device=pc" target="_blank">
-                    <img src="https://logospng.org/download/tiktok/logo-tiktok-icone-1536.png" alt="TikTok">
-                </a>
-                <div class="social-name">TikTok</div>
-                <div class="link-text">
-                    <a href="https://www.tiktok.com/@ndszz7.am_capcut?is_from_webapp=1&sender_device=pc" target="_blank">Acesse meu perfil</a>
-                </div>
-            </div>
-
-            <div class="social-link">
-                <a href="https://mobile.capcutshare.com/s/Zs8f4c7hN/" target="_blank">
-                    <img src="https://th.bing.com/th/id/OIP.9U6Zb4hFmdunlUPsHbxnxwAAAA?w=256&h=256&rs=1&pid=ImgDetMain" alt="CapCut">
-                </a>
-                <div class="social-name">CapCut</div>
-                <div class="link-text">
-                    <a href="https://mobile.capcutshare.com/s/Zs8f4c7hN/" target="_blank">Veja meus vídeos</a>
-                </div>
-            </div>
-
-            <div class="social-link">
-                <a href="https://www.instagram.com/ndszz7?igsh=aXJ0M29ubjZuNHB1&utm_source=qr" target="_blank">
-                    <img src="https://imagepng.org/wp-content/uploads/2017/08/instagram-icone-icon.png" alt="Instagram">
-                </a>
-                <div class="social-name">Instagram</div>
-                <div class="link-text">
-                    <a href="https://www.instagram.com/ndszz7?igsh=aXJ0M29ubjZuNHB1&utm_source=qr" target="_blank">Acesse meu perfil</a>
-                </div>
-            </div>
+  <div class="container">
+    <h2>Site do yNdszz7</h2>
+    <div class="social-links">
+      <div class="social-link">
+        <a href="https://wa.me/92985340003" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        </a>
+        <div class="social-name">WhatsApp</div>
+        <div class="link-text">
+          <a href="https://wa.me/92985340003" target="_blank">Clique para conversar!</a>
         </div>
+      </div>
+
+      <div class="social-link">
+        <a href="https://www.tiktok.com/@ndszz7.am_capcut" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/3046/3046127.png" alt="TikTok">
+        </a>
+        <div class="social-name">TikTok</div>
+        <div class="link-text">
+          <a href="https://www.tiktok.com/@ndszz7.am_capcut" target="_blank">Acesse meu perfil</a>
+        </div>
+      </div>
+
+      <div class="social-link">
+        <a href="https://mobile.capcutshare.com/s/Zs8f4c7hN/" target="_blank">
+          <img src="https://freelogopng.com/images/all_img/1664284836cap-cut-logo-png.png" alt="CapCut">
+        </a>
+        <div class="social-name">CapCut</div>
+        <div class="link-text">
+          <a href="https://mobile.capcutshare.com/s/Zs8f4c7hN/" target="_blank">Veja meus vídeos</a>
+        </div>
+      </div>
+
+      <div class="social-link">
+        <a href="https://www.instagram.com/ndszz7" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        </a>
+        <div class="social-name">Instagram</div>
+        <div class="link-text">
+          <a href="https://www.instagram.com/ndszz7" target="_blank">Acesse meu perfil</a>
+        </div>
+      </div>
     </div>
+  </div>
 </body>
 </html>
